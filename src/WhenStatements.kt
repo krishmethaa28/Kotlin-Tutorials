@@ -1,7 +1,7 @@
 //When statements in Kotlin are like Switch statements in Java just without break
 
 fun main() {
-    val num1 = 3
+    val num1 : Int = 3
 
     when(num1){
 
