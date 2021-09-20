@@ -1,4 +1,4 @@
-//operators work same as java, only the variable namespace differ { int in java}
+//operators work same as java, only the variable type differ { int in java}
 
 fun main() {
     val num1 : Int = 23
