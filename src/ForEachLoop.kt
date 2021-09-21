@@ -2,15 +2,39 @@
 fun main(){
     val num = 1..10  //range (1-10)
 
+    println("Numbers in range from 1 - 10: ")
     for(a in num){
-        print(a)
+        print("$a ")
     }
 
-    println()
+    println("\n")
 
     //count ++2
+    println("Numbers in range from 1 - 10 skipping 2: ")
     for(a in num step 2){
-        print(a)
+        print("$a ")
     }
-    
+
+    println("\n")
+
+    //print in reversed order
+    println("Numbers in range from 16 - 1 : ")
+    val num1 = 16 downTo 1
+    for(a in num1){
+        print("$a ")
+    }
+
+    println("\n")
+
+    //print ignoring the last number
+    println("Numbers in range from 1 - 15 : ")
+    val num2 = 1 until 16
+    for(a in num2){
+        print("$a ")
+    }
+
+    println("\n")
+
+
+
 }
