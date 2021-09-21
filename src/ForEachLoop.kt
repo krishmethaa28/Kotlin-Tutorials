@@ -36,7 +36,7 @@ fun main(){
     println("\n")
 
 //print in reverse ignoring the last number
-    println("Numbers in range from 1 - 15 : ")
+    println("Numbers in range from 15 - 1 : ")
     for(a in num2.reversed()){
         print("$a ")
     }
