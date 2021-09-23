@@ -8,6 +8,10 @@ fun main() {
     finalAmount = calcAmount(100,0.03)
     println("Amount Due with special tax : Rs.$finalAmount")
 
+    //change the order of parameter passing
+    finalAmount = calcAmount(interest = 0.02, amt = 100)
+    println("Amount Due with special tax : Rs.$finalAmount")
+
 }
 
 @JvmOverloads  //same method used for default and parameterized method to call in java
