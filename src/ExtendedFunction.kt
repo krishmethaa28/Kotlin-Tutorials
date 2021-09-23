@@ -17,10 +17,20 @@ fun main() {
     alien3 = alien1.plus(alien2)
     alien3.show()
 
+    //object 4
+    var alien4 = Alien()
+    alien4.skills = "Python"
+    alien4.show()
+
+ //object 5
+    var alien5 = Alien()
+    alien5 = alien3 plus alien4 //Using infix to avoid brackets
+    alien5.show()
+
 }
 
 //Extended Functions
-fun Alien.plus(a : Alien) : Alien{
+infix fun Alien.plus(a : Alien) : Alien{
     var newAlien = Alien()
     newAlien.skills = this.skills + ", " + a.skills
     return newAlien
