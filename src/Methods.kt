@@ -1,3 +1,7 @@
+//change class name MethodsKt --> Methods
+@file:JvmName("Methods")
+
+
 fun main() {
 
     println("Add(2,3) : " + add(2,3))
