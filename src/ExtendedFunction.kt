@@ -24,13 +24,18 @@ fun main() {
 
  //object 5
     var alien5 = Alien()
-    alien5 = alien3 plus alien4 //Using infix to avoid brackets
+    alien5 = alien3 plus alien4 // Using infix to avoid brackets
     alien5.show()
+
+ //object 6
+    var alien6 = Alien()
+    alien6 = alien4 + alien3 // operator overloading using operator keyword
+    alien6.show()
 
 }
 
 //Extended Functions
-infix fun Alien.plus(a : Alien) : Alien{
+infix operator fun Alien.plus(a : Alien) : Alien{
     var newAlien = Alien()
     newAlien.skills = this.skills + ", " + a.skills
     return newAlien
