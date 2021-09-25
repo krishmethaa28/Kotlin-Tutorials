@@ -1,14 +1,23 @@
 
 //inherit class
 //By default all the classes and functions in Kotlin are Final, open keyword allows for inheritance.... (No multiple inheritance)
-open class Parent{
+open class Parent(age: Int) {
+
+    init {
+        println("Parent constructor : age passed from child class --> $age")
+    }
+
 //override function
     open fun work(){
         println("Parent : I am a parent class")
     }
 }
 
-class Child : Parent(){
+class Child(age : Int) : Parent(age){
+
+    init {
+        println("Child constructor")
+    }
 
     override fun work(){
         println("Child : I am a child class")
@@ -17,6 +26,6 @@ class Child : Parent(){
 
 fun main() {
 
-    var father : Parent = Child()  // child object with parent class type...
+    var father : Parent = Child(23)  // child object with parent class type...
     father.work()
 }
