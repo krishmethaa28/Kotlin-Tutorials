@@ -1,6 +1,6 @@
 fun main() {
 
-    var values = mutableListOf<Int>(10,30,40,50,60)
+    var values = mutableListOf<Int>(10,30,40,50,60)  //two types of list --> mutable & listOf
     values.add(70)
     values.add(1,20)
 
