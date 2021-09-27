@@ -8,7 +8,7 @@ fun main() {
 //Method 1
     var con : Consumer<Int> = object : Consumer<Int>{
         override fun accept(t: Int) {
-            print(t)
+            print("$t ")
         }
 
     }
@@ -18,10 +18,16 @@ fun main() {
 
 //Method 2
 
-    values.forEach { print(it) }  //Function inside function
+    values.forEach { print("$it ") }  //Function inside function
 
     println()
 //Method 3
     values.forEach(::print)
+
+    println()
+
+//Filter & Map
+    var evens = values.filter { it%2 == 0 }.map { it*2 }
+    evens.forEach { print("$it ") }
 
 }
